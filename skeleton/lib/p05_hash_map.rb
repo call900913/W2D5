@@ -13,6 +13,7 @@ class HashMap
   end
 
   def set(key, val)
+    #added a comment here
   end
 
   def get(key)
