@@ -47,7 +47,7 @@ class LinkedList
   end
 
   def get(key)
-    return false if empty?
+    return nil if empty?
     each do |link|
       return link.val if link.key == key
     end
@@ -55,7 +55,7 @@ class LinkedList
   end
 
   def include?(key)
-    return false if empty?
+    return nil if empty?
     any? do |link|
       link.key == key
     end
@@ -77,7 +77,7 @@ class LinkedList
 
   def update(key, val)
     # byebug
-    return false if empty?
+    return nil if empty?
     each do |link|
       if link.key == key
         link.val = val
@@ -86,7 +86,7 @@ class LinkedList
   end
 
   def remove(key)
-    return false if empty?
+    return nil if empty?
     each do |link|
       link.remove if link.key == key
     end
